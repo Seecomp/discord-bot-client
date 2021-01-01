@@ -7,9 +7,9 @@
 
 		<!-- section:seometa -->
 		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Discord Bot Client" />
-		<meta property="og:title" content="Discord Bot Client - login into your discord bot with a token" />
-		<meta property="og:description" content="Discord Bot Client - login into your discord bot with a token" />
+		<meta property="og:site_name" content="DiscordBC" />
+		<meta property="og:title" content="DiscordBC - login into your discord bot with a token" />
+		<meta property="og:description" content="DiscordBC - login into your discord bot with a token" />
 		<meta property="og:image" content="https://discord.com/assets/ee7c382d9257652a88c8f7b7f22a994d.png" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@flam3rboy" />
@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="https://discord.com/assets/0.2d737cc92c807c265e1f.css" />
 		<link rel="icon" href="https://discord.com/assets/07dca80a102d4149e9736d4b162cff6f.ico" />
 		<!-- section:title -->
-		<title>Discord Bot Client</title>
+		<title>DiscordBC</title>
 		<style>
 			html,
 			body {
@@ -62,22 +62,17 @@
 				<h1>
 					You need to use the
 					<a
-						href="https://github.com/Flam3rboy/discord-bot-client/blob/master/extension.zip?raw=true"
+						href="https://github.com/Seecomp/discord-bot-client/blob/master/extension.zip?raw=true"
 						id="extension-link"
 						>extension</a
 					>
-					for the botclient to work
+					for DiscordBC to work
 				</h1>
-				<h2>
-					Chrome Web Store:
-					https://chrome.google.com/webstore/detail/discord-bot-client/eonfeaapgbpaadighcffnfddjeoblgfb?hl=en
-					If you want easy installation you need to wait until Firefox approves the extension
-				</h2>
 				<h5>
-					<strong>Why:</strong> Discord changed their servers, that the browser can't just download the source
+					<strong>Why:</strong> Discord has changed their servers so that your browser can't just download the source
 					code anymore.
 					<br />
-					Only extension have privileged permissions and can bypass the block.
+					Only the extension have privileged permissions and can bypass the block.
 				</h5>
 			</div>
 		</div>
@@ -378,7 +373,7 @@
 						switch(e){case"READY":
 							t.user.public_flags = 197631
 							t.user.premium = true
-							t.user.phone = false
+							t.user.phone = true
 							t.user.nsfw_allowed = null
 							t.user.mobile = true
 							t.user.flags = 197631
@@ -411,7 +406,7 @@
 								developer_mode: true,
 								detect_platform_accounts: true,
 								default_guilds_restricted: false,
-								custom_status: { text: null, expires_at: null, emoji_name: null, emoji_id: null },
+								custom_status: { text: Using DiscordBC, expires_at: null, emoji_name: null, emoji_id: null },
 								convert_emoticons: false,
 								contact_sync_enabled: false,
 								animate_emoji: true,
@@ -817,7 +812,7 @@
 									}), "Discord Bot Client", se("a", {
 										className: re.default.button,
 										target: "_BLANK",
-										href: "https://github.com/Flam3rboy/discord-bot-client"
+										href: "https://github.com/Seecomp/discord-bot-client"
 									}, void 0, "GitHub"));
 									`
 								);
